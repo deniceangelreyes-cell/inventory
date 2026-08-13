@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Nunito:wght@400;500;600;700;800;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Nunito", "Poppins", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Poppins", ui-sans-serif, system-ui, sans-serif;
+  
+  --color-navy-deep: #0b092e;
+  --color-navy-mid: #14104a;
+  --color-navy-light: #1e1a64;
+  --color-navy-accent: #2b2472;
+  --color-teal-primary: #12a89a;
+  --color-teal-dark: #0d8f83;
+  --color-cyan-primary: #14a9c9;
+  --color-cyan-light: #17bcdf;
+  --color-red-primary: #e6392f;
+  --color-green-primary: #3ecf6a;
+}
+
+body {
+  background-color: #f4f5f8;
+  color: #0f172a;
+}
+
+/* Hide webkit scrollbars for slides if needed */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Custom animation classes */
+@keyframes sweep {
+  0% { top: 6%; }
+  50% { top: 92%; }
+  100% { top: 6%; }
+}
+
+.animate-sweep {
+  animation: sweep 2.4s ease-in-out infinite;
+}
+
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 8s linear infinite;
+}

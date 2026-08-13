@@ -1,0 +1,6 @@
+{
+  "name": "AUX Air Conditioner Service and Inventory System",
+  "description": "Unified system with splash screen authorization, sales forecasting, real-time spare parts stock inventory with steppers, jsQR scanner, and technician service reports.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
